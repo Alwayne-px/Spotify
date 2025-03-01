@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alwayne Playlist</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Sidebar (Playlist Section) -->
+    <div class="sidebar">
+      <h2>My Playlist</h2>
+      <ul id="playlist"></ul>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="playlist-header">
+        <h1>Alwayne Playlist</h1>
+      </div>
+      <div class="now-playing">
+        <img id="albumCover" src="default-cover.jpg" alt="Album Cover" />
+        <div>
+          <h3 id="songTitle">No Song Playing</h3>
+          <p id="artistName">Artist</p>
+        </div>
+      </div>
+
+      <div class="progress-container">
+        <span id="currentTime">00:00</span>
+        <div class="progress-bar">
+          <div class="progress"></div>
+          <div class="progress-circle"></div>
+        </div>
+        <span id="duration">00:00</span>
+      </div>
+
+      <div class="controls">
+        <button id="prev">⏮️</button>
+        <button id="playPause">▷</button>
+        <button id="next">⏭️</button>
+      </div>
+
+      <div class="shuffle-loop-container">
+        <button id="shuffle">🔀 Off</button>
+        <button id="loop">🔁</button>
+      </div>
+    </div>
+
+    <audio id="audioPlayer"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
